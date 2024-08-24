@@ -1,0 +1,459 @@
+body {
+    overflow: hidden;
+    background-color: #0c1631;
+
+    width:100%;
+}
+
+.paused * {
+    animation-play-state: paused !important;
+  }
+
+#svgbox
+{
+   
+    width:100vmin;
+    height:100vmin;
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);  
+} 
+
+
+
+.text
+{
+position: absolute;
+fill:white;
+}
+.outer-circle
+{
+
+    stroke-width:.2;
+    fill:none;
+    /* fill:#153047; */
+}
+.middle-circle
+{
+
+    stroke-width:.2;
+    fill:none;
+    /* fill:#1c6872; */
+}
+.inner-circle
+{
+
+    stroke-width:.2;
+    /* fill:#4cf5e9; */
+    fill:none;
+}
+
+
+
+
+.sticker
+{
+    stroke:black;
+   fill:none;
+   stroke-width:.7
+}
+.striker-bindi
+{
+    stroke:black;
+    stroke-width:.7;
+    fill:black;
+}
+
+.eywbrows
+{
+    stroke:black;
+    fill:none;
+    stroke-width:1
+    
+}
+.nose-line-eye
+{
+    stroke:black;
+    fill:none;
+    stroke-width:.1
+}
+.eyes
+{
+    stroke-width: .2;
+
+}
+.nose
+{
+    fill:none;
+    stroke:black;
+    stroke-width:.6
+}
+.smile
+{
+    stroke-width: .2;
+    fill:black;
+    stroke:black;
+}
+.nose-line
+{
+    stroke-width: .2;
+    fill:none;
+    stroke:black; 
+}
+.flute-outer
+{
+    stroke-width: .5;
+    fill:none;
+    stroke:black;
+animation:flute-outer-ani 5s linear 1;
+    transform-origin:60px 125px;
+    
+    
+}
+@keyframes flute-outer-ani {
+    to{
+        transform: rotate(0deg);
+    }
+
+    from{
+        transform: rotate(-82deg); 
+    }
+}
+.flute-left-design
+{
+    stroke-width: .5;
+    fill:black;
+    stroke:black; 
+}
+.flute-inner-design
+{
+    stroke-width: .5;
+    fill:none;
+    stroke:black; 
+}
+.flute-right-design
+{
+    stroke-width: .5;
+    fill:none;
+    stroke:black; 
+}
+
+.crown
+{
+    stroke-width: .5;
+    fill:none;
+    stroke:black; 
+    animation:crownani 3s linear infinite ;
+    transform-origin:110px 70px ;
+}
+@keyframes  crownani{
+    from{
+        transform: rotate(-9deg);
+    }
+    to{
+        transform:rotate(7deg);
+    }
+}
+
+.crown-bubbles
+{
+    stroke-width: .3;
+    fill:white;
+    stroke:black; 
+    transform-origin: 118px 62px;
+    animation: crown-bubbles-ani 3s linear infinite,
+    crown-rev 3s linear infinite;
+    
+}
+@keyframes crown-bubbles-ani {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes crown-rev {
+    from{
+        transform:rotate(15deg);
+    }
+    to{
+        transform: rotate(-15deg);
+    }
+
+}
+
+.crown-innerbubble
+{
+    stroke-width: .2;
+    fill:none;
+    stroke:#1c6872; 
+    transform-origin: 118px 62px;
+    animation: crown-bubbles-ani 3s linear infinite; 
+    
+}
+.universal-crown{
+    animation:universal-sticker-ani 2s linear 1;
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-delay: .6s;
+}
+.universal-sticker
+{
+    animation:universal-sticker-ani 2s linear 1;
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+    stroke-width:5
+}
+.happy-text
+{
+    animation:universal-sticker-ani 2s linear 1;
+    opacity:0;
+    stroke:black;
+    fill:#f58611;
+    stroke-width:.3;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+
+ .telugu-text {
+    animation:universal-sticker-ani 2s linear 1;
+    stroke:black;
+    fill:#f58611;
+    stroke-width:.3;
+    opacity:0;
+  font-family: "Noto Sans Telugu", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  
+}
+
+
+
+
+.universal-eyebrows
+{
+    animation:universal-sticker-ani 2s linear 1;
+    opacity:1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.universal-eye
+{
+    animation:universal-sticker-ani 2s linear 1;
+    opacity:1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.2s;
+}
+.universal-nose
+{
+    animation:universal-sticker-ani 2s linear 1;
+    opacity:1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+.universal-smile
+{
+    animation:universal-sticker-ani 2s linear 1;
+    opacity:1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+
+@keyframes universal-sticker-ani {
+
+    75%{
+        opacity:0;
+    }
+    95%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+
+}
+
+.Outer-heart-design
+{
+    stroke-width:1;
+    fill:none;
+    animation: Outer-heart-design-ani 3s linear 1;
+    animation-fill-mode: forwards;
+    transform-origin: 100px 100px;
+    animation: Outer-heart-design 3s linear infinite,
+    crown-rev 3s linear infinite;
+}
+/* @keyframes Outer-heart-design {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform:rotate(-360deg)
+    }
+} */
+
+.Outer-heart-design path:nth-child(1){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(2){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(3){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(4){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(5){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(6){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(7){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(8){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(9){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(10){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(11){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(12){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(13){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(14){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(15){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(16){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(17){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(18){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(19){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(20){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(21){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(21){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(22){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(23){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(24){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(25){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(26){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(27){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(28){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(29){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(30){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(31){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(32){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(33){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(34){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(35){stroke:black;fill:#1c6872;stroke-width:.2}
+.Outer-heart-design path:nth-child(36){stroke:black;fill:#1c6872;stroke-width:.2}
+
+
+
+
+#svg-box-2
+{
+   
+    width:100vmin;
+    height:100vmin;
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);  
+}
+.heart
+{
+    
+    stroke-width:1;
+    fill:none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2table
+Big circle 
+clock down
+counter clock up 
+10 =20
+20=40
+30=60
+40=80
+50=100
+60=120
+70=140
+80=160
+90=180
+100=200
+110=220
+120=240
+130=260
+140=280
+180=300
+190=320
+200=340
+210=360*
+
+
+for 300=5
+200=3
+100=1/
+
